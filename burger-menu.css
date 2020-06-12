@@ -65,3 +65,40 @@ body{
     width: 10px;
 }
 
+.menu-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.menu-nav__link{
+    display: inline-block;
+    text-decoration: none;
+    color: #222;
+    margin-right: 20px;
+}
+
+.menu-nav{
+    height: 50px;
+    background-color: #fff;
+    line-height: 50px;
+    padding-left: 20px;
+    padding-right: 40px;
+    margin-right: -25px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transition: 0.5s;
+    transform-origin: right center;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.menu-nav__active{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
